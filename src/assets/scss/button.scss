@@ -1,0 +1,45 @@
+header {
+  font-family: "Montserrat", sans-serif;
+
+  h1 {
+    margin: 0px 0px 0px 50px;
+  }
+  p {
+    margin: 0px 0px 0px 50px;
+  }
+  .container-header-button {
+    background-color: rgba(83, 86, 86, 0.262);
+    width: 5%;
+    height: 30px;
+    border-radius: 30% / 50%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0% 50%;
+
+    .owl {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      img {
+        width: 40%;
+        margin-right: 9px;
+      }
+    }
+    button {
+      width: 55%;
+      height: 100%;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      border-radius: 50%;
+      border: rgb(255, 255, 255);
+      transition: transform 0.3s ease;
+    }
+
+ 
+    .active {
+      transform: translateX 55%; 
+    }
+  }
+}
+
