@@ -11,9 +11,10 @@ const ToggleButton = () => {
     dispatch(toggleButton());
   };
 
+  
   return (
     <button onClick={handleClick} className={isActive ? 'active' : ''}>
-      Toggle
+ 
     </button>
   );
 };
