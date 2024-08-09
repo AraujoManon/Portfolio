@@ -13,7 +13,6 @@ const Typewriter = ({ text, delay, infinite }) => {
         setCurrentIndex(prevIndex => prevIndex + 1);
       }, delay);
     } else if (infinite) {
-      // Restart animation if infinite
       setTimeout(() => {
         setCurrentText('');
         setCurrentIndex(0);

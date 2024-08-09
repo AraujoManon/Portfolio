@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import ToggleButton from "./ToggleButton";
 import lightOwl from "../assets/images/lightOwl.svg";
 import darkOwl from "../assets/images/darkOwl.svg";
-import Particle from "./Particle";
 import Typewriter from "./Typewriter";
 
 const Header = () => {
@@ -11,7 +10,6 @@ const Header = () => {
 
   return (
     <header>
-      <Particle />
       <div className="text">
         <h1>Bienvenue !</h1>
         <p className="title-description">

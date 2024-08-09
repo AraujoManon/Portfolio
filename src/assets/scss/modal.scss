@@ -1,0 +1,125 @@
+@keyframes fadeInSmoke {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    filter: blur(10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes fadeOutSmoke {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.05);
+    filter: blur(5px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.1);
+    filter: blur(10px);
+  }
+}
+
+@keyframes gentleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.562);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e1e1edc;
+  border-radius: 12px;
+  position: relative;
+  padding: 30px;
+  max-width: 700px;
+  width: 100%;
+  animation: fadeInSmoke 0.6s ease-out forwards,
+    gentleFloat 4s ease-in-out infinite;
+  color: #f1f1f1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  font-size: 2rem;
+  margin: 0;
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.modal-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  animation: gentleFloat 5s ease-in-out infinite;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+  cursor: url("../images/cursor.svg"), auto;
+  animation: gentleFloat 4s ease-in-out infinite;
+}
+
+.modal-close-icon {
+  width: 40px;
+  height: 40px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.modal-close-icon:hover {
+  transform: rotate(360deg) scale(1.2);
+  filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.7));
+}
+
+.details-section {
+  margin-top: 20px;
+}
+
+

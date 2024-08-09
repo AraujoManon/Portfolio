@@ -1,4 +1,3 @@
-
 import { TOGGLE_BUTTON } from './ButtonActions';
 
 const initialState = {
