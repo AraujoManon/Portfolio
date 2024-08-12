@@ -1,0 +1,52 @@
+@keyframes shimmerEffect {
+  0% {
+    background-position: -100% 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+main.active {
+  .projets .filter-buttons .drop-button {
+    background: radial-gradient(
+      circle at 50% 50%,
+      rgba(240, 248, 255, 0.6) 20%,
+      rgba(173, 216, 230, 0.6) 70%
+    );
+    color: #333;
+    border: 2px solid #87cefa;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    cursor: url("../../images/sun.svg"), auto;
+
+    &:hover {
+      background: radial-gradient(
+        circle at 50% 50%,
+        rgba(240, 248, 255, 0.8) 20%,
+        rgba(173, 216, 230, 0.8) 70%
+      );
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      background: radial-gradient(
+        circle at 50% 50%,
+        rgba(240, 248, 255, 0.9) 20%,
+        rgba(173, 216, 230, 0.9) 70%
+      );
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .drop-button.active.selected {
+    background: radial-gradient(circle at 50% 50%, #87cefa 30%, #b0e0e6 70%);
+    color: #ffffff;
+    border: 2px solid #b0e0e6;
+    box-shadow: 0 12px 35px rgba(135, 206, 250, 0.8);
+    background-size: 200% 200%;
+    animation: shimmerEffect 4s linear infinite;
+  }
+}

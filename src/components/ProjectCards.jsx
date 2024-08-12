@@ -2,15 +2,18 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../redux/reducers/ModalSlice';
 
-const ProjectCard = ({ image, title, description, details, className }) => {
+const ProjectCards = ({ image, title, description, details, className, isActive }) => {
   const dispatch = useDispatch();
 
   const handleClick = () => {
     dispatch(openModal(details));
   };
 
+
+  const cardClasses = `project-card ${className} ${isActive ? 'active' : ''}`;
+
   return (
-    <div className={`project-card ${className}`} onClick={handleClick}>
+    <div className={cardClasses} onClick={handleClick}>
       <img src={image} alt={title} />
       <div className="card-overlay">
         <h3>{title}</h3>
@@ -20,4 +23,4 @@ const ProjectCard = ({ image, title, description, details, className }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectCards;

@@ -19,7 +19,7 @@
   }
 }
 
-@keyframes bounceInActive {
+@keyframes bounceInSelected {
   0% {
     transform: scale(0.5);
   }
@@ -28,6 +28,18 @@
   }
   100% {
     transform: scale(0.75);
+  }
+}
+
+@keyframes bounceInActive {
+  0% {
+    transform: scale(0.75);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.9);
   }
 }
 
@@ -42,6 +54,7 @@
     transform: translateY(0);
   }
 }
+
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -60,24 +73,21 @@
     rgba(255, 255, 255, 0.4) 20%,
     rgba(0, 0, 0, 0.5) 70%
   );
-  color: #e0e0e0; // Light grey color for a softer look
-  text-shadow:
-    0 0 6px rgba(255, 255, 255, 0.5), // Soft white glow
-    0 0 12px rgba(255, 255, 255, 0.4), 
-    0 0 18px rgba(255, 255, 255, 0.3); 
-  
-     border: none;
+  color: #e0e0e0;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.5),
+    0 0 12px rgba(255, 255, 255, 0.4), 0 0 18px rgba(255, 255, 255, 0.3);
+
+  border: none;
   border-radius: 50%;
   cursor: url("../images/cursor.svg"), auto;
   padding: 0;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6),
-    inset 0 -6px 12px rgba(0, 0, 0, 0.5),
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6), 0 -6px 12px rgba(0, 0, 0, 0.5),
     0 0 30px rgba(255, 255, 255, 0.3);
   transition: transform 0.3s ease-in-out, background-color 0.3s ease;
-  animation: float 3s ease-in-out infinite, bounceIn 1s cubic-bezier(0.5, 1.5, 0.5, 1.5);
-  
+  animation: float 3s ease-in-out infinite,
+    bounceIn 1s cubic-bezier(0.5, 1.5, 0.5, 1.5);
+
   &:hover {
-    animation: none;
     transform: scale(0.75);
     background: radial-gradient(
       circle at 50% 50%,
@@ -86,8 +96,8 @@
     );
   }
 
-  &.active {
-    animation: bounceInActive 0.6s ease-in-out;
+  &.selected {
+    animation: bounceInSelected 0.6s ease-in-out;
     transform: scale(0.75);
   }
 

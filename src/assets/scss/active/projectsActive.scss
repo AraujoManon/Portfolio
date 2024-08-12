@@ -1,0 +1,61 @@
+@keyframes backgroundPulseProjects {
+  0% {
+    background: #f5f5dc;
+  }
+  50% {
+    background: #e0e0d6;
+  }
+  100% {
+    background: #f5f5dc;
+  }
+}
+
+@keyframes borderHighlightProjects {
+  0% {
+    border-bottom: 4px solid #ff6f61;
+  }
+  50% {
+    border-bottom: 4px solid #ff8a80;
+  }
+  100% {
+    border-bottom: 4px solid #ff6f61;
+  }
+}
+
+@keyframes textGlowProjects {
+  0% {
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(135, 206, 250, 0.7),
+      0 0 24px rgba(135, 206, 250, 0.5), 0 0 36px rgba(135, 206, 250, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  }
+}
+
+main.active {
+  background-color: #f5f5dc;
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  animation: backgroundPulseProjects 10s ease-in-out infinite;
+
+  .projets {
+    border-bottom: 4px solid #ff6f61;
+
+    h2 {
+      color: #87ceeb;
+      text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+        0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    h2:hover {
+      color: #87ceeb;
+    }
+  }
+}

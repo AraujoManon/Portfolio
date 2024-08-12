@@ -1,0 +1,23 @@
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    #87ceeb,
+    #ffb6c1,
+    #ffeb3b
+  ); 
+  transition: background 1s ease; 
+}
+
+.particle-container.active {
+  background: linear-gradient(
+    45deg,
+    #87ceeb,
+    #ffb6c1,
+    #ffeb3b
+  ); 
+}

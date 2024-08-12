@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import FilterButtons from './FilterButtons';
-import ProjectCard from './ProjectCard';
+import ProjectCards from './ProjectCards';
 import Modal from './Modal'; 
 import { cards } from '../data/Cards';
 
-const Projets = () => {
+const Projects = () => {
   const selectedFilter = useSelector((state) => state.filter.filter);
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [animationClass, setAnimationClass] = useState('entering');
+  const isActive = useSelector((state) => state.button.isActive);
 
   useEffect(() => {
     setAnimationClass('exiting');
@@ -27,19 +28,20 @@ const Projets = () => {
   }, [selectedFilter]);
 
   return (
-    <main>
+    <main className={isActive ? "active" : ""}>
       <div className="projets">
-        <h2>Découvrez en un peu plus!</h2>
+        <h2>Mes projets</h2>
         <FilterButtons />
         <div className="cards-container">
           {filteredProjects.map((project) => (
-            <ProjectCard
+            <ProjectCards
               key={project.id}
               image={project.image}
               title={project.name}
               description={project.description}
               details={project.details} 
               className={animationClass}
+              isActive={isActive}
             />
           ))}
         </div>
@@ -49,4 +51,4 @@ const Projets = () => {
   );
 };
 
-export default Projets;
+export default Projects;

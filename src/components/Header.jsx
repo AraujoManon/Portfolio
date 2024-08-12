@@ -5,17 +5,18 @@ import lightOwl from "../assets/images/lightOwl.svg";
 import darkOwl from "../assets/images/darkOwl.svg";
 import Typewriter from "./Typewriter";
 
+
 const Header = () => {
-  const isActive = useSelector((state) => state.buttonReducer?.isActive);
+  const isActive = useSelector((state) => state.button.isActive);
 
   return (
-    <header>
+    <header className={isActive ? "active" : ""}>
       <div className="text">
-        <h1>Bienvenue !</h1>
-        <p className="title-description">
+        <h1 className={isActive ? "active" : ""}>Bienvenue !</h1>
+        <p className={isActive ? "active" : "title-description"}>
           <Typewriter
-            text="Oups! On dirais que vous êtes tombez sur une développeuse junior qui construis des sites responsives avec HTML, CSS, React et Redux, tout en optimisant le SEO pour que votre visibilité soit aussi éclatante qu’un feu d’artifice ! "
-            delay={100}
+            text="Sur le portfolio d'une développeuse web passionnée, spécialisée dans la création de sites responsives performants. Avec une maîtrise des technologies telles que HTML, CSS, JavaScript, et React, je suis déterminée à développer des solutions innovantes tout en optimisant le référencement (SEO) des projets. Mon expertise comprend également l'utilisation de Redux pour la gestion d'état, ainsi que la gestion de versions avec Git & GitHub. Découvrez-moi !"
+            delay={50}
             infinite={false}
           />
         </p>

@@ -63,7 +63,7 @@ export const cards = [
       technologies: "React, React Router, SCSS, Figma",
       skills:
         "Développement front-end avec React, Stylisme et Animation avec Sass, Routage et Gestion des Erreurs",
-        githubUrl: "https://github.com/AraujoManon/Projet-8-"},
+        githubUrl: "https://github.com/AraujoManon/Projet-8-            "},
   },
   {
     id: "4",

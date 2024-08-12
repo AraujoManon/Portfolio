@@ -12,21 +12,22 @@
     border: none;
     border-radius: 4px;
     color: white;
-    padding: 10px 16px;
-    font-size: 14px; 
+    padding: 10px 16px; 
+    font-size: 16px;
     cursor: url("../images/cursor.svg"), auto;
     transition: background-color 0.3s, transform 0.3s;
     text-align: center;
     animation: gentleFloat 4s ease-in-out infinite;
-    
-  }
+    position: relative;
+    }
   
   .buttonModal.link {
     background-color: transparent;
     border: 2px solid #17a2b8;
     color: #17a2b8;
-    padding: 10px;
-    text-decoration: none;
+    padding: 10px 16px;
+    text-decoration: none; 
+    align-items: center; 
   }
   
   .buttonModal.link:hover {

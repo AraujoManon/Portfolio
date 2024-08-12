@@ -1,0 +1,15 @@
+.buttonModal.active {
+  background-color: #87cfeb00;
+  color: #ff6f61;
+  border: 0px solid #ff6e6100;
+  box-shadow: 0 0 4px rgba(255, 105, 97, 0.5), 0 0 4px rgba(255, 105, 97, 0.4),
+    0 0 6px rgba(255, 105, 97, 0.3);
+}
+.buttonModal.link.active {
+  background-color: #ff6e6196;
+  color: #ffffff;
+}
+
+.buttonModal.link:hover {
+  background-color: #87cefa;
+}

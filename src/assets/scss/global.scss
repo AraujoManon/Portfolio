@@ -17,3 +17,14 @@ body {
     width: 100%;
   }
 }
+.cursor-custom-active {
+  cursor: url("../images/sun.svg"), auto;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}

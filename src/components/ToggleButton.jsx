@@ -4,7 +4,6 @@ import { toggleButton } from "../redux/reducers/ButtonActions";
 
 const ToggleButton = () => {
   const dispatch = useDispatch();
-
   const isActive = useSelector((state) => state.button.isActive);
 
   const handleClick = () => {
@@ -12,8 +11,11 @@ const ToggleButton = () => {
   };
 
   return (
-    <button onClick={handleClick} className={isActive ? "active" : ""}>
-      
+    <button 
+      onClick={handleClick} 
+      className={isActive ? "active" : ""}
+    >
+     
     </button>
   );
 };

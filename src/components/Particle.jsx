@@ -1,16 +1,14 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim"; 
-
+import { loadSlim } from "@tsparticles/slim";
+import { useSelector } from "react-redux";
 
 const Particle = () => {
-  const [init, setInit] = useState(false);
+  const isActive = useSelector((state) => state.button.isActive);
 
   useEffect(() => {
     initParticlesEngine(async (engine) => {
       await loadSlim(engine); // Charge les fonctionnalités slim de tsparticles
-    }).then(() => {
-      setInit(true);
     });
   }, []);
 
@@ -22,7 +20,7 @@ const Particle = () => {
     () => ({
       background: {
         color: {
-          value: "#000000", 
+          value: isActive ? "linear-gradient(45deg, #87ceeb, #ffb6c1, #ffeb3b)" : "#000000", // Dégradé bleu, rose, jaune pour l'état actif
         },
       },
       fpsLimit: 120, 
@@ -30,7 +28,7 @@ const Particle = () => {
         events: {
           onClick: {
             enable: true,
-            mode: "push", // Mode d'interaction au clic
+            mode: "push",
           },
           onHover: {
             enable: true,
@@ -39,20 +37,20 @@ const Particle = () => {
         },
         modes: {
           push: {
-            quantity: 4, // Quantité de particules ajoutées au clic
+            quantity: 4,
           },
           repulse: {
-            distance: 100, // Distance de répulsion au survol
+            distance: 100,
             duration: 0.4,
           },
         },
       },
       particles: {
         color: {
-          value: "#ffffff",
+          value: isActive ? "#ffffff" : "#ffffff", // Couleur des particules (blanc)
         },
         links: {
-          color: "#ffffff", 
+          color: isActive ? "#ffeb3b" : "#ffffff", // Jaune pour les liens lorsqu'actif
           distance: 150, 
           enable: true,
           opacity: 0.5,
@@ -72,7 +70,7 @@ const Particle = () => {
           density: {
             enable: true,
           },
-          value: 400, // Nombre de particules
+          value: 400,
         },
         opacity: {
           value: 0.5, 
@@ -86,22 +84,18 @@ const Particle = () => {
       },
       detectRetina: true, 
     }),
-    []
+    [isActive] 
   );
 
-  if (init) {
-    return (
-      <div className="particle-container">
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-        />
-      </div>
-    );
-  }
-
-  return null; 
+  return (
+    <div className={`particle-container ${isActive ? 'active' : ''}`}>
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+      />
+    </div>
+  );
 };
 
 export default Particle;

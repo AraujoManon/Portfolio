@@ -1,0 +1,32 @@
+.modal-overlay.active {
+  background: rgba(255, 255, 255, 0.336);
+  transition: background 0.3s ease;
+}
+
+.modal-content.active {
+  background: #f5f5dc;
+  border: 2px solid #ff6f61;
+  color: #87ceeb;
+
+  h3,
+  p {
+    text-shadow: 0 0 3px rgba(135, 206, 250, 0.6),
+      0 0 6px rgba(135, 206, 250, 0.4), 0 0 9px rgba(135, 206, 250, 0.3);
+  }
+
+  p {
+    color: #ff6f61;
+    text-shadow: 0 0 1px rgba(255, 105, 97, 0.5),
+      0 0 2px rgba(255, 105, 97, 0.4), 0 0 3px rgba(255, 105, 97, 0.3);
+  }
+
+  h3 {
+    color: #87ceeb;
+  }
+}
+
+.modal-close-button.active {
+  background-color: #87ceeb;
+  box-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+    0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+}
