@@ -1,0 +1,48 @@
+@keyframes subtleBackgroundGlow {
+  0% {
+    background-color: rgba(30, 30, 30, 0.85); 
+  }
+  50% {
+    background-color: rgba(30, 30, 30, 0.9); 
+  }
+  100% {
+    background-color: rgba(30, 30, 30, 0.85); 
+  }
+}
+main {
+  background-color: rgba(30, 30, 30, 0.85); 
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  animation: subtleBackgroundGlow 10s ease-in-out infinite; 
+
+  .projets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding-bottom: 100px;
+    border-bottom: 4px solid rgba(0, 173, 255, 0.3);
+    
+    h2 {
+      margin: 50px 0px 20px 0px;
+      font-size: 3rem;
+      font-family: "Montserrat", sans-serif;
+      color: #ffffff;
+      text-shadow:
+        0 0 6px rgba(0, 173, 255, 0.5), 
+        0 0 12px rgba(0, 173, 255, 0.4), 
+        0 0 18px rgba(0, 173, 255, 0.3);
+      transform: perspective(600px) rotateX(3deg) rotateY(1deg);
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    h2:hover {
+      transform: perspective(600px) rotateX(6deg) rotateY(3deg);
+      color: #ffffff;
+    }
+  }
+}

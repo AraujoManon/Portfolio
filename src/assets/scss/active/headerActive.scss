@@ -1,0 +1,74 @@
+@keyframes backgroundPulse {
+  0% {
+    background: #f5f5dc;
+  }
+  50% {
+    background: #e0e0d6;
+  }
+  100% {
+    background: #f5f5dc;
+  }
+}
+
+@keyframes borderHighlight {
+  0% {
+    border-bottom: 4px solid #ff6f61;
+  }
+  50% {
+    border-bottom: 4px solid #ff8a80;
+  }
+  100% {
+    border-bottom: 4px solid #ff6f61;
+  }
+}
+
+@keyframes textGlow {
+  0% {
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(135, 206, 250, 0.7),
+      0 0 24px rgba(135, 206, 250, 0.5), 0 0 36px rgba(135, 206, 250, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  }
+}
+
+header.active {
+  background: none;
+  border-bottom: 4px solid #ff6f61;
+}
+
+header.active .text h1 {
+  color: #82c7e2;
+  text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+    0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  transition: color 0.5s, text-shadow 0.5s;
+  animation: textGlow 4s ease-in-out infinite;
+}
+
+header.active .text p {
+  color: #7fbed6;
+  text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
+    0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+  transition: color 0.5s, text-shadow 0.5s;
+  animation: textGlow 4s ease-in-out infinite;
+}
+
+header.active .container-header-button {
+  background-color: #f8f9fa;
+  transition: background-color 0.5s;
+}
+
+header.active .container-header-button button {
+  background-color: #ff6f61;
+  border: 1px solid #ff6f61;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header.active .container-header-button button:hover {
+  background-color: #f7c6c7;
+}

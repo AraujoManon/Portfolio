@@ -1,0 +1,51 @@
+.contact-form-container.is-active {
+    background: #f5f5dc;
+    border-radius: 12px;
+    border: 2px solid #ff6f61;
+    color: #87ceeb;
+  }
+  
+  .contact-form-container.is-active h2 {
+    color: #87ceeb;
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.6),
+                 0 0 12px rgba(135, 206, 250, 0.4),
+                 0 0 18px rgba(135, 206, 250, 0.3);
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  
+  .contact-form-container.is-active label {
+    color: #87ceeb;
+    text-shadow: 0 0 6px rgba(135, 206, 250, 0.4),
+                 0 0 12px rgba(135, 206, 250, 0.4),
+                 0 0 18px rgba(135, 206, 250, 0.3);
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  
+  .contact-form.is-active input,
+  .contact-form.is-active textarea {
+    background: #f5f5dc;
+    color: #000000;
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  
+  .contact-form.is-active input:focus,
+  .contact-form.is-active textarea:focus {
+    border: 1px solid #ff8a80; 
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  
+  .submit-button.is-active {
+    background-color: #ff6f61;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px rgba(255, 105, 97, 0.5);
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  
+  .submit-button.is-active:hover {
+    background-color: #ff8a80;
+  }
+  
+  .contact-info.is-active p a.is-active{
+    cursor: url("../../images/sun.svg"), auto;
+
+}
