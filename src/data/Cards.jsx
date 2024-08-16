@@ -1,11 +1,11 @@
-import SophieBluelImage from "../assets/images/sophiebluel.png";
-import qwentaImage from "../assets/images/qwenta.png";
-import kasaImage from "../assets/images/kasa.png";
-import ohmyfoodImage from "../assets/images/ohmyfood.png";
-import ninacarducciImage from "../assets/images/ninacarducci.png";
-import events from "../assets/images/724events.png";
-import argentbank from "../assets/images/argentbank.png";
-import printit from "../assets/images/printit.png";
+import SophieBluelImage from "../assets/images/sophiebluel.webp";
+import qwentaImage from "../assets/images/qwenta.webp";
+import kasaImage from "../assets/images/kasa.webp";
+import ohmyfoodImage from "../assets/images/ohmyfood.webp";
+import ninacarducciImage from "../assets/images/ninacarducci.webp";
+import events from "../assets/images/724events.webp";
+import argentbank from "../assets/images/argentbank.webp";
+import printit from "../assets/images/printit.webp";
 
 export const cards = [
   {
