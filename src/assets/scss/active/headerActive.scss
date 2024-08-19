@@ -22,23 +22,9 @@
   }
 }
 
-@keyframes textGlow {
-  0% {
-    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
-      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(135, 206, 250, 0.7),
-      0 0 24px rgba(135, 206, 250, 0.5), 0 0 36px rgba(135, 206, 250, 0.3);
-  }
-  100% {
-    text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
-      0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
-  }
-}
 
 header.active {
-  background: none;
+  background: linear-gradient(45deg, #87ceeb, #ffb6c1, #ffeb3b);
   border-bottom: 4px solid #ff6f61;
 }
 
@@ -47,15 +33,15 @@ header.active .text h1 {
   text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
     0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
   transition: color 0.5s, text-shadow 0.5s;
-  animation: textGlow 4s ease-in-out infinite;
+
 }
 
 header.active .text p {
-  color: #7fbed6;
+  color: #6ca3b8;
   text-shadow: 0 0 6px rgba(135, 206, 250, 0.5),
     0 0 12px rgba(135, 206, 250, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
   transition: color 0.5s, text-shadow 0.5s;
-  animation: textGlow 4s ease-in-out infinite;
+ 
 }
 
 header.active .container-header-button {

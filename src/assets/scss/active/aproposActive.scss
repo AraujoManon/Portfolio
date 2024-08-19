@@ -1,0 +1,31 @@
+.a-propos.active {
+        border-bottom: 4px solid #ff6f61;
+}
+  .a-propos-text.active {
+    border: 2px solid #87ceeb;
+    color: #ffffff;
+    
+    h2,
+    p {
+      text-shadow: 0 0 0px rgba(135, 206, 250, 0.6),
+        0 0 0px rgba(135, 206, 250, 0.4), 0 0 9px rgba(135, 206, 250, 0.3);
+    }
+  
+    h2 {
+      color: #87ceeb;
+    }
+  
+    p {
+      color: #ff6f61;
+      font-weight: 600;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(255, 255, 255, 0.4),
+        0 0 3px rgba(255, 255, 255, 0.3);
+    }
+  }
+  
+  .a-propos img.active {
+    box-shadow: 0 0 6px rgba(135, 206, 250, 0.5), 0 0 12px rgba(135, 206, 250, 0.4),
+      0 0 18px rgba(135, 206, 250, 0.3);
+    border: 2px solid #ff6f61;
+  }
+  

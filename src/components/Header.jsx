@@ -15,8 +15,8 @@ const Header = () => {
         <h1 className={isActive ? "active" : ""}>Bienvenue !</h1>
         <p className={isActive ? "active" : "title-description"}>
           <Typewriter
-            text="Sur le portfolio d'une développeuse web passionnée, spécialisée dans la création de sites responsives performants. Avec une maîtrise des technologies telles que HTML, CSS, JavaScript, et React, je suis déterminée à développer des solutions innovantes tout en optimisant le référencement (SEO) des projets. Mon expertise comprend également l'utilisation de Redux pour la gestion d'état, ainsi que la gestion de versions avec Git & GitHub. Découvrez-moi !"
-            delay={50}
+            text="Bienvenue sur le portfolio d'une développeuse web passionnée et diplômée d'un bac+2 en développement web. Avec une maîtrise approfondie de HTML, CSS, JavaScript, ainsi que des compétences avancées en React et Redux, je conçois des sites dynamiques, intuitifs et optimisés pour le SEO. Mon objectif : allier innovation et performance pour offrir des projets à fort impact. Curieuse et en quête constante de nouvelles idées, je vous invite à plonger dans mon univers et à découvrir mon travail !"
+            delay={30}
             infinite={false}
           />
         </p>
