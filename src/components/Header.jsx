@@ -4,6 +4,7 @@ import ToggleButton from "./ToggleButton";
 import lightOwl from "../assets/images/lightOwl.svg";
 import darkOwl from "../assets/images/darkOwl.svg";
 import Typewriter from "./Typewriter";
+import Nav from "./Nav";
 
 
 const Header = () => {
@@ -11,11 +12,12 @@ const Header = () => {
 
   return (
     <header className={isActive ? "active" : ""}>
+      <Nav />
       <div className="text">
         <h1 className={isActive ? "active" : ""}>Bienvenue !</h1>
         <p className={isActive ? "active" : "title-description"}>
           <Typewriter
-            text="Bienvenue sur le portfolio d'une développeuse web passionnée et diplômée d'un bac+2 en développement web. Avec une maîtrise approfondie de HTML, CSS, JavaScript, ainsi que des compétences avancées en React et Redux, je conçois des sites dynamiques, intuitifs et optimisés pour le SEO. Mon objectif : allier innovation et performance pour offrir des projets à fort impact. Curieuse et en quête constante de nouvelles idées, je vous invite à plonger dans mon univers et à découvrir mon travail !"
+            text="Chez une développeuse Web en pleine croissance, prête à révolutionner vos projets avec des solutions innovantes et percutantes !"
             delay={30}
             infinite={false}
           />

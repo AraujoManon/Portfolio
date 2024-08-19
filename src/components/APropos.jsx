@@ -6,12 +6,12 @@ const APropos = () => {
   const isActive = useSelector((state) => state.button.isActive);
 
   return (
-    <div className={`a-propos ${isActive ? 'active' : ''}`}>
+    <div id="qui-suis-je" className={`a-propos ${isActive ? 'active' : ''}`}>
       <div className={`a-propos-text ${isActive ? 'active' : ''}`}>
-        <h2 className={isActive ? 'active' : ''}>Qui suis-je</h2>
+        <h2 className={isActive ? 'active' : ''}>Qui suis-je...</h2>
         <p className={isActive ? 'active' : ''}>
-          Je suis une développeuse web passionnée, diplômée d'un bac+2 en
-          développement web de OpenClassrooms. Avec une solide expertise en
+          Je suis une développeuse web passionnée, diplômée d'un bac+2 d'intégrateur web
+          chez OpenClassrooms. Avec une solide expertise en
           HTML, CSS, JavaScript et des compétences avancées en React et Redux,
           je me spécialise dans la création de sites dynamiques, intuitifs et
           optimisés pour le SEO. Mon objectif est de combiner innovation et

@@ -27,8 +27,8 @@ const Contact = () => {
 
   return (
     <footer className={`contact-form-container ${isActive ? 'is-active' : ''}`}>
-      <h2 className={isActive ? 'is-active' : ''}>Contactez-moi</h2>
-      <form onSubmit={handleSubmit} className={`contact-form ${isActive ? 'is-active' : ''}`}>
+      <h2 id="contact" className={isActive ? 'is-active' : ''}>Contactez-moi</h2>
+      <form  onSubmit={handleSubmit} className={`contact-form ${isActive ? 'is-active' : ''}`}>
         <label htmlFor="name">Nom :</label>
         <input
           type="text"

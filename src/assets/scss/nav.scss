@@ -1,0 +1,43 @@
+.nav {
+  margin: 15px 0px 0px;
+  margin-left: 64%;
+  position: fixed;
+  z-index: 99;
+  width: 30%;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  border-radius: 13% / 100%;
+  padding: 10px 30px;
+  background: linear-gradient(135deg, #1e1e1e, #282a36, #0d1117, #1a1a1a);
+  border: 2px solid rgba(0, 173, 255, 0.3);
+  animation: gentleFloat 4s ease-in-out infinite;
+  .textNav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    animation: gentleFloat 8s ease-in-out infinite;
+    a {
+      text-decoration: none;
+      color: white;
+      text-shadow: 0 0 6px rgba(0, 173, 255, 0.5),
+        0 0 12px rgba(0, 173, 255, 0.4), 0 0 18px rgba(0, 173, 255, 0.3);
+    
+    }
+    p {
+      margin: 0;
+      
+    }
+  }
+}
+
+@keyframes gentleFloat {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }

@@ -29,7 +29,7 @@ const Projects = () => {
 
   return (
     <main className={isActive ? "active" : ""}>
-      <div className="projets">
+      <div id="mes-projets" className="projets">
         <h2>Mes projets</h2>
         <FilterButtons />
         <div className="cards-container">

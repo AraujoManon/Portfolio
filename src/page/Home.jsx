@@ -5,7 +5,6 @@ import Projets from "../components/Projects";
 import Modal from "../components/Modal";
 import Contact from "../components/Contact";
 import APropos from "../components/APropos";
-
 const Home = () => {
   const isActive = useSelector((state) => state.button.isActive);
 
