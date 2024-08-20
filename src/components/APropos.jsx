@@ -1,33 +1,24 @@
 import React from "react";
+import Introduction from "./Introduction.jsx";
+import ChatBotImage from "./ChatBotImage.jsx";
+import ChatBotInfo from "./ChatBotInfo.jsx";
+import ChatBot from './ChatBot.jsx';
 import { useSelector } from 'react-redux';
-import robo from "../assets/images/robo.png";
-import roboColor from '../assets/images/roboColor.png'
+
 const APropos = () => {
-  const isActive = useSelector((state) => state.button.isActive);
+  const isChatBotVisible = useSelector((state) => state.chatbot.isVisible);
+  const isActive = useSelector((state) => state.button.isActive); 
 
   return (
     <div id="qui-suis-je" className={`a-propos ${isActive ? 'active' : ''}`}>
-      <div className={`a-propos-text ${isActive ? 'active' : ''}`}>
-        <h2 className={isActive ? 'active' : ''}>Qui suis-je...</h2>
-        <p className={isActive ? 'active' : ''}>
-          Je suis une développeuse web passionnée, diplômée d'un bac+2 d'intégrateur web
-          chez OpenClassrooms. Avec une solide expertise en
-          HTML, CSS, JavaScript et des compétences avancées en React et Redux,
-          je me spécialise dans la création de sites dynamiques, intuitifs et
-          optimisés pour le SEO. Mon objectif est de combiner innovation et
-          performance pour réaliser des projets à fort impact. Curieuse et
-          toujours à la recherche de nouvelles idées, je vous invite à explorer
-          mon univers et découvrir mes réalisations à travers ce portfolio !
-        </p>
+      {!isChatBotVisible && <Introduction />}
+      {isChatBotVisible && <ChatBot />}
+      <div className={`chatbot-container ${isActive ? 'active' : ''}`}>
+        <ChatBotImage />
+        <ChatBotInfo />
       </div>
-      <img 
-        src={isActive ? roboColor : robo} 
-        alt="Robo" 
-        className={isActive ? 'active' : ''} 
-      />
     </div>
   );
 };
 
 export default APropos;
-

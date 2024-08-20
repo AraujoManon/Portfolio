@@ -1,0 +1,25 @@
+.a-propos.active {
+  .chat-window {
+    border: 2px solid #87ceeb;
+  }
+  .message.user {
+    font-weight: 500;
+    color: #87ceeb;
+    text-shadow: 0 0 0px rgba(135, 206, 250, 0.5),
+      0 0 0px rgba(43, 108, 148, 0.4), 0 0 18px rgba(135, 206, 250, 0.3);
+    background-color: white;
+  }
+
+  .message.bot {
+    background-color: #ff6f61;
+  }
+  input {
+    border: 2px solid #87ceeb;
+    cursor: url("../../images/sun.svg"), auto;
+  }
+  button {
+    background-color: #87ceeb;
+    border: 2px solid #87ceeb;
+    cursor: url("../../images/sun.svg"), auto;
+  }
+}

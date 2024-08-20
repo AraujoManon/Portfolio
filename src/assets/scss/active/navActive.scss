@@ -1,10 +1,14 @@
 .nav.is-active {
-    border: 2px solid #ff6f61;
-    background: linear-gradient(60deg, #87ceeb, #ffb6c1, #ffeb3b);
-  
-} 
-.nav.is-active .textNav a {
-        margin: 0;
-        text-shadow: none;
-        font-weight: 700;
-    }
+  border: 2px solid #ff6f61;
+  background: linear-gradient(60deg, #87ceeb, #ffb6c1, #ffeb3b);
+}
+a.is-active {
+  margin: 0;
+  text-shadow: none;
+  font-weight: 700;
+  cursor: url("../../images/sun.svg"), auto;
+}
+
+p.is-active {
+  cursor: url("../../images/sun.svg"), auto;
+}

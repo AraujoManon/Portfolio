@@ -1,0 +1,62 @@
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 30px 0px 30px 50px;
+  animation: fadeInSmoke 0.6s ease-out forwards;
+
+  .chat-window {
+    border: 2px solid #17a2b8;;
+    border-radius: 5px;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+
+    .message {
+      padding: 5px;
+      margin-bottom: 5px;
+      border-radius: 5px;
+
+      &.user {
+        background-color: #e0e0e0;
+        color: #2d2929;
+        text-align: right;
+        text-shadow: 0 0 6px rgba(0, 173, 255, 0.5),
+          0 0 12px rgba(0, 173, 255, 0.4), 0 0 18px rgba(0, 173, 255, 0.3);
+      }
+
+      &.bot {
+        text-shadow: 0 0 6px rgba(255, 255, 255, 0.5),
+          0 0 12px rgba(255, 255, 255, 0.4), 0 0 18px rgba(255, 255, 255, 0.3);
+        color: white;
+        background-color: rgba(0, 173, 255, 0.3);
+        text-align: left;
+        width: 80%;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+
+    input {
+      border: 2px solid #17a2b8;
+      border-radius: 5px;
+      padding: 5px;
+      margin-right: 5px;
+      width: 100%;
+      cursor: url("../images/cursor.svg"), auto;
+    }
+
+    button {
+      text-shadow: 0 0 0px rgba(255, 255, 255, 0.5), 0 0 12px rgba(255, 255, 255, 0.4), 0 0 18px rgba(255, 255, 255, 0.3);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      border: 2px solid #17a2b8;
+      cursor: url("../images/cursor.svg"), auto;
+      background-color: #17a2b8;
+    }
+  }
+}

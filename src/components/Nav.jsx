@@ -14,24 +14,24 @@ const Nav = () => {
       <div className="textNav">
         <a
           href="#qui-suis-je"
-          className={activeLink === '#qui-suis-je' ? 'active-link' : ''}
+          className={`${activeLink === '#qui-suis-je' ? 'active-link' : ''} ${isActive ? 'is-active' : ''}`}
           onClick={() => handleLinkClick('#qui-suis-je')}
         >
-          <p>Qui suis-je</p>
+          <p className={isActive ? 'is-active' : ''}>Qui suis-je</p>
         </a>
         <a
           href="#mes-projets"
-          className={activeLink === '#mes-projets' ? 'active-link' : ''}
+          className={`${activeLink === '#mes-projets' ? 'active-link' : ''} ${isActive ? 'is-active' : ''}`}
           onClick={() => handleLinkClick('#mes-projets')}
         >
-          <p>Mes projets</p>
+          <p className={isActive ? 'is-active' : ''}>Mes projets</p>
         </a>
         <a
           href="#contact"
-          className={activeLink === '#contact' ? 'active-link' : ''}
+          className={`${activeLink === '#contact' ? 'active-link' : ''} ${isActive ? 'is-active' : ''}`}
           onClick={() => handleLinkClick('#contact')}
         >
-          <p>Contact</p>
+          <p className={isActive ? 'is-active' : ''}>Contact</p>
         </a>
       </div>
     </div>
