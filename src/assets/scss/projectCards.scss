@@ -54,7 +54,9 @@
   &.exiting {
     animation: spinOut 1s ease-in-out forwards;
   }
-
+  @media screen and (max-width: 616px) {
+    width: 100%;
+   }
   img {
     width: 100%;
     height: 100%;

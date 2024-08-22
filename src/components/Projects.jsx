@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import FilterButtons from './FilterButtons';
 import ProjectCards from './ProjectCards';
-import Modal from './Modal'; 
 import { cards } from '../data/Cards';
 
 const Projects = () => {
@@ -45,7 +44,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <Modal /> 
+       
       </div>
     </main>
   );

@@ -1,46 +1,52 @@
 @keyframes gentleFloat {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .buttonModal {
-    background-color: #17a2b8;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 10px 16px; 
-    font-size: 25px;
-    cursor: url("../images/cursor.svg"), auto;
-    transition: background-color 0.3s, transform 0.3s;
-    text-align: center;
-    animation: gentleFloat 4s ease-in-out infinite;
-    position: relative;
-    animation: fadeInSmoke 0.6s ease-out forwards;
-    }
-  
-  .buttonModal.link {
-    background-color: transparent;
-    border: 2px solid #17a2b8;
-    color: #17a2b8;
-    padding: 10px 16px;
-    text-decoration: none; 
-    align-items: center; 
+  50% {
+    transform: translateY(-5px);
   }
-  
-  .buttonModal.link:hover {
-    background-color: #17a2b8;
-    color: white;
+}
+
+.buttonModal {
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 16px;
+  font-size: 25px;
+  cursor: url("../images/cursor.svg"), auto;
+  transition: background-color 0.3s, transform 0.3s;
+  text-align: center;
+  animation: gentleFloat 4s ease-in-out infinite;
+  position: relative;
+  animation: fadeInSmoke 0.6s ease-out forwards;
+
+  @media screen and (max-width: 768px) {
+    font-size: 15px;
+    padding: 6px 6px;
   }
-  
-  .button-group {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 16px;
-    margin-top: 15px;
-  }
-  
+
+}
+
+.buttonModal.link {
+  background-color: transparent;
+  border: 2px solid #17a2b8;
+  color: #17a2b8;
+  padding: 10px 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.buttonModal.link:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+  margin-top: 15px;
+}

@@ -13,7 +13,9 @@
   opacity: 0;
   transition: opacity 1s ease-out;
   font-size: 25px;
-  
+  @media screen and (max-width: 768px) {
+height: 650px;
+  }
 }
 
 .contact-form-container.show {
@@ -24,9 +26,11 @@
   font-size: 55px;
   margin-bottom: 20px;
   text-align: center;
-  text-shadow: 0 0 6px rgba(0, 120, 255, 0.4),
-   0 0 12px rgba(0, 120, 255, 0.3),
-    0 0 18px rgba(0, 120, 255, 0.2); 
+  text-shadow: 0 0 6px rgba(0, 120, 255, 0.4), 0 0 12px rgba(0, 120, 255, 0.3),
+    0 0 18px rgba(0, 120, 255, 0.2);
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
 }
 
 .contact-form {
@@ -37,25 +41,30 @@
 
 .contact-form label {
   color: #e0e0e0;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .contact-form input,
 .contact-form textarea {
   background: #2c2c2c;
-  border: 1px solid #17a2b8; 
+  border: 1px solid #17a2b8;
   border-radius: 4px;
   color: #f1f1f1;
   padding: 10px;
   font-size: 25px;
   transition: background-color 0.3s, border-color 0.3s;
   cursor: url("../images/cursor.svg"), auto;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   background: #1e1e1e;
-  border-color: #1e90ff; 
- 
+  border-color: #1e90ff;
 }
 
 .contact-form textarea {
@@ -77,18 +86,20 @@
     0 0 12px rgba(255, 255, 255, 0.4), 0 0 18px rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 10px rgba(0, 120, 255, 0.3);
   cursor: url("../images/cursor.svg"), auto;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .submit-button:hover {
   background-color: #1e90ff;
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 120, 255, 0.5); 
+  box-shadow: 0 0 15px rgba(0, 120, 255, 0.5);
 }
 
 .contact-info {
   margin-top: 20px;
   text-align: center;
-
 }
 
 .contact-info a {
@@ -112,10 +123,16 @@
   opacity: 1;
   transition: opacity 0.5s ease-out;
 }
-
-p
-a {
+p {
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+}
+p a {
   cursor: url("../images/cursor.svg"), auto;
+  @media screen and (max-width:768px) {
+    font-size: 20px;
+  }
 }
 
 .status-message.hidden {

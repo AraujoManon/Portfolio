@@ -12,6 +12,17 @@
   border: 2px solid rgba(0, 173, 255, 0.3);
   animation: gentleFloat 4s ease-in-out infinite;
   animation: fadeInSmoke 0.6s ease-out forwards;
+  @media screen and (max-width: 768px) {
+    margin-left: 42%;
+    width: 46%;
+  }
+  @media screen and (max-width: 616px) {
+    margin-left: 0%;
+    width: 80%;
+    margin-bottom:-40px ;
+    position: static;
+  }
+
   .textNav {
     display: flex;
     flex-direction: row;
@@ -35,6 +46,7 @@
       &:hover {
         transform: scale(1.2);
       }
+      
     }
   }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { openModal } from '../redux/reducers/ModalSlice';
-
+import Modal from './Modal';
 const ProjectCards = ({ image, title, description, details, className, isActive }) => {
   const dispatch = useDispatch();
 

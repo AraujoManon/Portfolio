@@ -8,6 +8,9 @@
   animation: fadeInSmoke 0.6s ease-out forwards;
   p {
     margin: 15px 0px 5px 0px;
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+     }
   }
   a {
     color: #fffdfd;
@@ -18,5 +21,8 @@
     &:hover {
       transform: scale(1.2);
     }
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+     }
   }
 }

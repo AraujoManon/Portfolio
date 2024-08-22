@@ -1,10 +1,8 @@
-
 main {
   background-color: rgba(30, 30, 30, 0.85);
   position: relative;
   width: 100%;
   min-height: 500px;
- 
 
   .projets {
     display: flex;
@@ -27,6 +25,9 @@ main {
       position: relative;
       z-index: 1;
       transition: transform 0.3s ease, color 0.3s ease;
+      @media screen and (max-width: 768px) {
+        font-size: 40px;
+      }
     }
 
     h2:hover {
