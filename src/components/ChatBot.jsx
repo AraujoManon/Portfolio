@@ -4,7 +4,7 @@ import { sendMessage } from '../redux/reducers/ChatBotSlice';
 
 const Chatbot = () => {
   const [input, setInput] = useState('');
-  const [isActive, setIsActive] = useState(false); 
+  const [isActive] = useState(false); 
   const dispatch = useDispatch();
   const messages = useSelector((state) => state.chatbot.messages);
 
@@ -12,12 +12,12 @@ const Chatbot = () => {
     e.preventDefault();
     dispatch(sendMessage({ message: input }));
     setInput('');
-    setIsActive(false); 
+  
   };
 
   const handleInputChange = (e) => {
     setInput(e.target.value);
-    setIsActive(e.target.value.length > 0); 
+ 
   };
 
   return (

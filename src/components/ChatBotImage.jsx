@@ -18,7 +18,7 @@ const ChatBotImage = () => {
         alt="Robo" 
         className={isActive ? 'active' : ''} 
         onClick={handleImageClick} 
-        style={{ cursor: 'pointer' }}
+      
       />
     );
   };
