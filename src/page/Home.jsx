@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 import Header from "../components/Header";
 import Projets from "../components/Projects";
-import Modal from "../components/Modal";
 import Contact from "../components/Contact";
 import APropos from "../components/APropos";
 const Home = () => {
@@ -17,7 +16,6 @@ const Home = () => {
       <Header />
       <APropos />
       <Projets />
-      <Modal />
       <Contact />
     </div>
   );
