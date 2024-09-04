@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-
 const Contact = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [status, setStatus] = useState('');
@@ -38,6 +37,7 @@ const Contact = () => {
           onChange={handleChange}
           placeholder="Votre nom"
           required
+          autoComplete="name"  
           className={isActive ? 'is-active' : ''}
         />
 
@@ -50,6 +50,7 @@ const Contact = () => {
           onChange={handleChange}
           placeholder="Votre email"
           required
+          autoComplete="email"  
           className={isActive ? 'is-active' : ''}
         />
 
@@ -61,6 +62,7 @@ const Contact = () => {
           onChange={handleChange}
           placeholder="Votre message"
           required
+          autoComplete="off"  
           className={isActive ? 'is-active' : ''}
         ></textarea>
 
